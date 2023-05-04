@@ -1,0 +1,39 @@
+@tailwind base;
+
+:root {
+	font-family: sans-serif;
+
+	color-scheme: light;
+
+	@apply bg-zinc-800;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+* {
+	@apply overscroll-y-none;
+}
+
+body,
+html {
+	@apply overflow-hidden touch-manipulation overscroll-none;
+	-ms-scroll-chaining: none;
+	-webkit-user-drag: none;
+}
+
+html {
+	@apply fixed inset-0 select-none;
+}
+
+body,
+#app {
+	@apply w-full h-full;
+}
+
+@tailwind components;
+
+@tailwind utilities;
